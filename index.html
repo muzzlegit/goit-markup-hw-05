@@ -325,16 +325,6 @@
           </div>
         </section>
     </main>
-    <!--Модальное окно-->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="btn-close" type="button" data-modal-close>
-          <svg width="18" height="18" class="icon">
-            <use href=./images/icons.svg#icon-close></use>
-          </svg>
-        </button>
-      </div>
-    </div>
     <!--Подвал-->
     <footer class="footer">
       <div class="conteiner box">
@@ -381,8 +371,34 @@
             </li>
           </ul>
         </div>
+        <div class="sign-box">
+          <form name="mailing-form">
+            <label for="mailing-form" class="sign">Подпишитесь на рассылку</label>
+            <input type="email" name="email" placeholder="E-mail" id="mailing-form">
+          </form>
+          <button class="sign-button" type="submit">
+            Подписаться
+            <svg width="24" height="24" class="icon">
+              <use href=./images/icons.svg#icon-send></use>
+            </svg>
+          </button>
+        </div>
+      
       </div>
     </footer>
+<!--Модальное окно-->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="btn-close" type="button" data-modal-close>
+        <svg width="18" height="18" class="icon">
+          <use href=./images/icons.svg#icon-close></use>
+        </svg>
+      </button>
+      <button class="btn-submit" type="button" data-modal-explosion>
+        explosion
+      </button>
+    </div>67
+  </div>
   <script src="./js/modal.js"></script>
 </body>
 </html>
